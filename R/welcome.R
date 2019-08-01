@@ -9,6 +9,7 @@
 #' call_scotty_demo("Andrew Carnegie")
 call_scotty_demo <- function(your_name) {
   if (nchar(your_name) > 30){
+    warning("your name is beyond 30 characters, and has been truncated")
     your_name <- substr(your_name, 1, 30)
   }
 
